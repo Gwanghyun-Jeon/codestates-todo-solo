@@ -17,17 +17,17 @@ function App() {
 
   return (
     <div className="App">
+      <PushButton
+        onClick={() => {
+          setIsNight(!isNight);
+        }}
+        isNight={isNight}
+      >
+        {isNight ? '주간모드로 바꾸기' : '야간모드로 바꾸기'}
+      </PushButton>
       <header className={isNight ? 'App-header' : 'App-header2'}>
         <img src={logo} className="App-logo" alt="logo" />
         <p>{`GH's space`}</p>
-        <PushButton
-          onClick={() => {
-            setIsNight(!isNight);
-          }}
-          isNight={isNight}
-        >
-          {isNight ? '주간모드로 바꾸기' : '야간모드로 바꾸기'}
-        </PushButton>
       </header>
     </div>
   );
