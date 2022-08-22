@@ -28,6 +28,7 @@ function App() {
         >
           {isNight ? '주간모드로 바꾸기' : '야간모드로 바꾸기'}
         </PushButton>
+        asdfasdf
       </header>
     </div>
   );
